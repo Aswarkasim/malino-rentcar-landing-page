@@ -11,15 +11,17 @@
           <?php foreach ($layanan as $row) { ?>
 
             <div class="col-md-4">
-              <div class="row">
-                <div class="col-md-3">
-                  <img src="<?= base_url($row->icon); ?>" width="100%" alt="">
-                </div>
-                <div class="col-md-9">
-                  <h4><strong class="text-danger"><?= $row->nama_layanan; ?></strong></h4>
-                  <p class="text-white"><?= character_limiter($row->deskripsi, '200'); ?></p>
-                </div>
-              </div>
+              <table class="table">
+                <tr>
+                  <td>
+                    <img src="<?= base_url($row->icon); ?>" width="100%" alt="">
+                  </td>
+                  <td>
+                    <h4><strong class="text-danger"><?= $row->nama_layanan; ?></strong></h4>
+                    <p class="text-white"><?= character_limiter($row->deskripsi, '200'); ?></p>
+                  </td>
+                </tr>
+              </table>
             </div>
 
           <?php } ?>
@@ -31,3 +33,16 @@
     </div>
   </div>
 </section>
+
+
+
+
+<!-- <div class="row">
+  <div class="col-md-3">
+    <img src="<?= base_url($row->icon); ?>" width="100%" alt="">
+  </div>
+  <div class="col-md-9">
+    <h4><strong class="text-danger"><?= $row->nama_layanan; ?></strong></h4>
+    <p class="text-white"><?= character_limiter($row->deskripsi, '200'); ?></p>
+  </div>
+</div> -->
