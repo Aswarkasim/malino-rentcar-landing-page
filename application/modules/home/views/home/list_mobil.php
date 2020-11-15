@@ -11,9 +11,13 @@
           <h4><strong><?= $row->merk_mobil ?></strong></h4>
           <p><?= $row->deskripsi; ?></p>
           <div class="row">
-            <div class="col-md-4 text-center"><img src="<?= base_url('assets/img/driver.svg'); ?>" width="20px" alt=""><br>driver <br> <?= $row->driver; ?></div>
-            <div class="col-md-4 text-center"><img src="<?= base_url('assets/img/seat.svg'); ?>" width="20px" alt=""><br>Seat<br> <?= $row->seat; ?></div>
-            <div class="col-md-4 text-center"><img src="<?= base_url('assets/img/perseneling.svg'); ?>" width="20px" alt=""><br>Tipe<br> <?= $row->type; ?></div>
+            <table class="table">
+              <tr align="text-center">
+                <td align="center"><img src="<?= base_url('assets/img/driver.svg'); ?>" width="20px" alt=""><br>driver <br> <?= $row->driver; ?></td>
+                <td align="center"><img src="<?= base_url('assets/img/seat.svg'); ?>" width="20px" alt=""><br>Seat<br> <?= $row->seat; ?></td>
+                <td align="center"><img src="<?= base_url('assets/img/perseneling.svg'); ?>" width="20px" alt=""><br>Tipe<br> <?= $row->type; ?></td>
+              </tr>
+            </table>
           </div>
 
           <br>
