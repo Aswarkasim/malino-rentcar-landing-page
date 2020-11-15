@@ -58,6 +58,7 @@
                                         <hr>
                                     </form>
                                     <hr>
+                                    Buka halaman <a href="<?= base_url(); ?>"><i class="fa fa-globe"></i> Home</a>
                                 </div>
                             </div>
                         </div>
