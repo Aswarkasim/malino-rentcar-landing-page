@@ -25,3 +25,16 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+
+
+/*
+DB : u8135964_malinotransport
+u : u8135964_malinotransport
+p : Q{gRQ4~^-=LE
+
+
+cpanel : 
+P: =7Ix@)g!TD_D
+
+*/

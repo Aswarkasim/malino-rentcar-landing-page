@@ -8,8 +8,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="malinotransport" content="malino transport rental mobil">
+  <meta name="malinotransport" content="malino transport rental mobil">
 
   <title><?= 'Admin | ' . $konfigurasi->nama_perusahaan;
           if (isset($title)) {
