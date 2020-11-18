@@ -36,7 +36,7 @@
                                                                   } ?>">Kontak Kami</a>
          </li>
        </ul>
-       <a target="_blank" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=Hai%20Malinotransport.com" class="btn btn-outline-danger">Pesan Sekarang <i class="fa fa-angle-right"></i></a>
+       <a target="_blank" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=<?= str_replace(' ', '%20', $konfigurasi->pesan_wa) ?>" class="btn btn-outline-danger">Pesan Sekarang <i class="fa fa-angle-right"></i></a>
      </div>
    </div>
  </nav>
