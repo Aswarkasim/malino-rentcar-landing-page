@@ -48,6 +48,15 @@ $role = $this->session->userdata('role');
         <a class="nav-link" href="<?php echo base_url('admin/konfigurasi') ?>">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Profil</span></a>
+
+    <li class="nav-item <?php if ($this->uri->segment(2) == "banner") {
+                            echo "active";
+                        }
+                        ?>">
+        <a class="nav-link" href="<?php echo base_url('admin/banner') ?>">
+            <i class="fas fa-fw fa-calendar"></i>
+            <span>Banner</span></a>
+
     </li>
 
     <!-- Nav Item - Tables -->

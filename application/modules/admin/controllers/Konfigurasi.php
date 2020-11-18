@@ -38,6 +38,8 @@ class Konfigurasi extends CI_Controller
                 'nama_bank'   => $i->post('nama_bank'),
                 'no_rekening'   => $i->post('no_rekening'),
                 'atas_nama_rekening'   => $i->post('atas_nama_rekening'),
+                'pesan_wa'   => $i->post('pesan_wa'),
+                'deskripsi'   => $i->post('deskripsi'),
                 'alamat'   => $i->post('alamat')
             ];
             $this->Crud_model->edit('tbl_konfigurasi', 'id_konfigurasi', '1', $data);

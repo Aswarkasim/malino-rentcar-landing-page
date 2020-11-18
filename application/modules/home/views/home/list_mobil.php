@@ -17,11 +17,21 @@
                 <td align="center"><img src="<?= base_url('assets/img/seat.svg'); ?>" width="20px" alt=""><br>Seat<br> <?= $row->seat; ?></td>
                 <td align="center"><img src="<?= base_url('assets/img/perseneling.svg'); ?>" width="20px" alt=""><br>Tipe<br> <?= $row->type; ?></td>
               </tr>
+
+
+            </table>
+            <table class="table">
+              <tr>
+                <td><i class="fa <?= $row->bbm == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i> BBM</td>
+                <td><i class="fa <?= $row->parkir == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i> Parkir</td>
+                <td><i class="fa <?= $row->tol == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i> Tol</td>
+                <td><i class="fa <?= $row->makanan_driver == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i> Makanan Driver</td>
+              </tr>
             </table>
           </div>
 
           <br>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=Hai%20Malinotransport.com" class="btn btn-danger">Pesan Sekarang <i class="fa fa-angle-right"></i></a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=<?= str_replace(' ', '%20', $konfigurasi->pesan_wa) ?>" class="btn btn-danger">Pesan Sekarang <i class="fa fa-angle-right"></i></a>
         </div>
       </div>
       <hr>

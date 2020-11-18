@@ -102,6 +102,68 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="" class="pull-right">BBM</label>
+                            </div>
+                            <div class="col-md-9">
+                                <select required name="bbm" class="form-control">
+                                    <option value="none">--BBM--</option>
+                                    <option value="1">Include</option>
+                                    <option value="0">Tidak</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="" class="pull-right">Parkir</label>
+                            </div>
+                            <div class="col-md-9">
+                                <select required name="parkir" class="form-control">
+                                    <option value="none">--Parkir--</option>
+                                    <option value="1">Include</option>
+                                    <option value="0">Tidak</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="" class="pull-right">Tol</label>
+                            </div>
+                            <div class="col-md-9">
+                                <select required name="tol" class="form-control">
+                                    <option value="none">--Tol--</option>
+                                    <option value="1">Include</option>
+                                    <option value="0">Tidak</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="" class="pull-right">Makanan Driver</label>
+                            </div>
+                            <div class="col-md-9">
+                                <select required name="makanan_driver" class="form-control">
+                                    <option value="none">--Makanan Driver--</option>
+                                    <option value="1">Include</option>
+                                    <option value="0">Tidak</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+
 
 
 
@@ -159,7 +221,8 @@
                             </div>
                             <div class="col-md-9">
                                 <input required type="file" name="gambar" class="form-control" id="">
-                                <span class="">* Gunakan Gambar Latar Putih</span>
+                                <span class="">* Gunakan Gambar Latar Putih</span><br>
+                                <span class="">* Jika digunakan untuk banner, gunakan gambar tanpa latar berformat png</span>
                             </div>
                         </div>
                     </div>

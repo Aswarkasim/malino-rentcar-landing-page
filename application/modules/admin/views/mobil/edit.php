@@ -101,6 +101,66 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-3">
+                                    <label for="" class="pull-right">BBM</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select required name="bbm" class="form-control">
+                                        <option value="none">--BBM--</option>
+                                        <option value="1" <?= $mobil->bbm == "1" ? "selected" : ""; ?>>Include</option>
+                                        <option value="0" <?= $mobil->bbm == "0" ? "selected" : ""; ?>>Tidak</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="" class="pull-right">Parkir</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select required name="parkir" class="form-control">
+                                        <option value="none">--Parkir--</option>
+                                        <option value="1" <?= $mobil->parkir == "1" ? "selected" : ""; ?>>Include</option>
+                                        <option value="0" <?= $mobil->parkir == "0" ? "selected" : ""; ?>>Tidak</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="" class="pull-right">Tol</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select required name="tol" class="form-control">
+                                        <option value="none">--Tol--</option>
+                                        <option value="1" <?= $mobil->tol == "1" ? "selected" : ""; ?>>Include</option>
+                                        <option value="0" <?= $mobil->tol == "0" ? "selected" : ""; ?>>Tidak</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="" class="pull-right">Makanan Driver</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <select required name="makanan_driver" class="form-control">
+                                        <option value="none">--Makanan Driver--</option>
+                                        <option value="1" <?= $mobil->makanan_driver == "1" ? "selected" : ""; ?>>Include</option>
+                                        <option value="0" <?= $mobil->makanan_driver == "0" ? "selected" : ""; ?>>Tidak</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
                                     <label for="" class="pull-right">Tampil Sebagai</label>
                                 </div>
                                 <div class="col-md-9">

@@ -102,12 +102,6 @@ section {
   min-height: 550px
 }
 
-#myCarousel {
-  position: relative;
-  z-index: 1;
-  background: #fff;
-  background-size: cover
-}
 
 .carousel-control-next,
 .carousel-control-prev {

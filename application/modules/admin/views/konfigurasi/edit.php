@@ -2,7 +2,8 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
+
             <div class="card shadow mb-4">
                 <div class="card-header">
                     <h3 class="card-title"><i class="fa fa-cogs"></i> <?= $title ?></h3>
@@ -15,103 +16,139 @@
                     ?>
 
                     <form action="<?= base_url('admin/konfigurasi') ?>" method="post">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Nama Perusahaan</label>
+                        <div class="row">
+                            <div class="col-md-6">
+
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Nama Perusahaan</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->nama_perusahaan ?>" name="nama_perusahaan" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->nama_perusahaan ?>" name="nama_perusahaan" class="form-control">
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Nama Pimpinan</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->nama_pimpinan ?>" name="nama_pimpinan" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Kontak Person</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->kontak_person ?>" name="kontak_person" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Email</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->email ?>" name="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">NPWP</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->npwp ?>" name="npwp" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Nomor Rekening</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->no_rekening ?>" name="no_rekening" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Nama Bank</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->nama_bank ?>" name="nama_bank" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Atas Nama Rekening</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->atas_nama_rekening ?>" name="atas_nama_rekening" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Alamat Lengkap</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->alamat ?>" name="alamat" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Isi Pesan WA</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <input type="text" value="<?= $konfigurasi->pesan_wa ?>" name="pesan_wa" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label for="" class="pull-right">Deskripsi</label>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <textarea name="deskripsi" class="form-control" id="editor" cols="30" rows="10"><?= $konfigurasi->deskripsi; ?></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
 
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Nama Pimpinan</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->nama_pimpinan ?>" name="nama_pimpinan" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Kontak Person</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->kontak_person ?>" name="kontak_person" class="form-control">
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Email</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->email ?>" name="email" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">NPWP</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->npwp ?>" name="npwp" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Nomor Rekening</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->no_rekening ?>" name="no_rekening" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Nama Bank</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->nama_bank ?>" name="nama_bank" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Atas Nama Rekening</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->atas_nama_rekening ?>" name="atas_nama_rekening" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <label for="" class="pull-right">Alamat Lengkap</label>
-                                </div>
-                                <div class="col-md-8">
-                                    <input type="text" value="<?= $konfigurasi->alamat ?>" name="alamat" class="form-control">
-                                </div>
-                            </div>
-                        </div>
 
 
 
@@ -136,3 +173,9 @@
         </div>
     </div>
 </div>
+
+
+<script src="<?= base_url('assets/') ?>js/ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace("editor");
+</script>

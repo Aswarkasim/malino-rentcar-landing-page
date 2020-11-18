@@ -30,9 +30,17 @@
                           <td><img src="<?= base_url('assets/img/perseneling.svg'); ?>" width="20px" alt=""><br><?= $row->type; ?></td>
                         </tr>
                       </table>
+                      <table class="table">
+                        <tr>
+                          <td><i class="fa <?= $row->bbm == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> BBM</td>
+                          <td><i class="fa <?= $row->parkir == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Parkir</td>
+                          <td><i class="fa <?= $row->tol == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Tol</td>
+                          <td><i class="fa <?= $row->makanan_driver == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Makanan Driver</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
-                  <a class="add-to-cart" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=Hai%20Malinotransport.com">Pesan Sekarang</a>
+                  <a class="add-to-cart" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=<?= str_replace(' ', '%20', $konfigurasi->pesan_wa) ?>">Pesan Sekarang</a>
                 </div>
               </div>
             </div>

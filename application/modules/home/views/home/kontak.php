@@ -5,11 +5,10 @@
         <h2>Kontak Kami</h2>
       </center>
     </div>
-
+    <img src="<?= base_url('assets/img/logo.png'); ?>" width="300px" alt="">
+    <hr>
     <div class="row">
-      <div class="col-md-4">
-        <img src="<?= base_url('assets/img/logo.png'); ?>" width="100%" alt="">
-      </div>
+
       <div class="col-md-4">
         <p><strong><?= $konfigurasi->nama_perusahaan; ?></strong><br>
           NPWP. <?= $konfigurasi->npwp; ?> <br>
@@ -21,6 +20,10 @@
         Kontak Person : <?= $konfigurasi->kontak_person; ?> <br>
         Email : <?= $konfigurasi->email; ?> <br>
         <a href="<?= base_url('admin/auth'); ?>">Admin Log</a>
+      </div>
+
+      <div class="col-md-4">
+        <?= $konfigurasi->deskripsi; ?>
       </div>
 
     </div>

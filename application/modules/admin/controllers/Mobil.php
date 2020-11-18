@@ -66,6 +66,10 @@ class Mobil extends CI_Controller
                         'driver'        => $i->post('driver'),
                         'seat'          => $i->post('seat'),
                         'type'          => $i->post('type'),
+                        'bbm'          => $i->post('bbm'),
+                        'parkir'          => $i->post('parkir'),
+                        'tol'          => $i->post('tol'),
+                        'makanan_driver'          => $i->post('makanan_driver'),
                         'is_active'     => $i->post('is_aktif'),
                         'gambar'          => $config['upload_path'] . $upload_data['uploads']['file_name']
                     ];
@@ -127,6 +131,10 @@ class Mobil extends CI_Controller
                         'driver'        => $i->post('driver'),
                         'seat'          => $i->post('seat'),
                         'type'          => $i->post('type'),
+                        'bbm'          => $i->post('bbm'),
+                        'parkir'          => $i->post('parkir'),
+                        'tol'          => $i->post('tol'),
+                        'makanan_driver'          => $i->post('makanan_driver'),
                         'is_active'     => $i->post('is_aktif'),
                         'gambar'        => $config['upload_path'] . $upload_data['uploads']['file_name']
                     ];
@@ -144,6 +152,10 @@ class Mobil extends CI_Controller
                     'driver'        => $i->post('driver'),
                     'seat'          => $i->post('seat'),
                     'type'          => $i->post('type'),
+                    'bbm'          => $i->post('bbm'),
+                    'parkir'          => $i->post('parkir'),
+                    'tol'          => $i->post('tol'),
+                    'makanan_driver'          => $i->post('makanan_driver'),
                     'is_active'     => $i->post('is_aktif')
                 ];
                 $this->Crud_model->edit('tbl_mobil', 'id_mobil', $id_mobil, $data);
