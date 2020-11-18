@@ -1,7 +1,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; <a href="https://api.whatsapp.com/send?phone=085298730727&text=Halo%20Scrollup.studio">scrollup.strudio</a></p>
+      <p class="m-0 text-center text-white">Copyright &copy; <a href="https://api.whatsapp.com/send?phone=085298730727&text=Halo%20Scrollup.studio">scrollup.studio</a></p>
     </div>
     <!-- /.container -->
   </footer>
