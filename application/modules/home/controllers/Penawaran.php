@@ -24,7 +24,7 @@ class Penawaran extends CI_Controller
 
     $config['base_url']     = base_url('home/penawaran/index/');
     $config['total_rows']   = count($mobil);
-    $config['per_page']     = 2;
+    $config['per_page']     = 3;
 
     $from = $this->uri->segment(4);
     $this->pagination->initialize($config);
