@@ -68,7 +68,7 @@ class Mobil extends CI_Controller
                         'type'          => $i->post('type'),
                         'bbm'          => $i->post('bbm'),
                         'parkir'          => $i->post('parkir'),
-                        'tol'          => $i->post('tol'),
+                        // 'tol'          => $i->post('tol'),
                         'makanan_driver'          => $i->post('makanan_driver'),
                         'is_active'     => $i->post('is_aktif'),
                         'gambar'          => $config['upload_path'] . $upload_data['uploads']['file_name']
@@ -133,7 +133,7 @@ class Mobil extends CI_Controller
                         'type'          => $i->post('type'),
                         'bbm'          => $i->post('bbm'),
                         'parkir'          => $i->post('parkir'),
-                        'tol'          => $i->post('tol'),
+                        // 'tol'          => $i->post('tol'),
                         'makanan_driver'          => $i->post('makanan_driver'),
                         'is_active'     => $i->post('is_aktif'),
                         'gambar'        => $config['upload_path'] . $upload_data['uploads']['file_name']

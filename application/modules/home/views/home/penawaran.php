@@ -33,9 +33,8 @@
                       <table class="table">
                         <tr>
                           <td><i class="fa <?= $row->bbm == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> BBM</td>
-                          <td><i class="fa <?= $row->parkir == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Parkir</td>
-                          <td><i class="fa <?= $row->tol == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Tol</td>
-                          <td><i class="fa <?= $row->makanan_driver == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Makanan Driver</td>
+                          <td><i class="fa <?= $row->parkir == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Parkir & Tol</td>
+                          <td><i class="fa <?= $row->makanan_driver == 1 ? "fa-check text-success" : "fa-times text-danger" ?>"></i><br> Lunch Driver</td>
                         </tr>
                       </table>
                     </div>

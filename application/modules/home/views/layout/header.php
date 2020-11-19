@@ -1,5 +1,4 @@
  <?php $konfigurasi = $this->Crud_model->listingOne('tbl_konfigurasi', 'id_konfigurasi', '1'); ?>
-
  <!-- Navigation -->
  <nav class="navbar navbar-expand-lg bg-white fixed-top" id="mainNav" style="padding-top: 30px; padding-bottom: 30px;">
    <div class="container">

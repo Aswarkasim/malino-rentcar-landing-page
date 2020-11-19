@@ -132,7 +132,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="row">
                             <div class="col-md-3">
                                 <label for="" class="pull-right">Tol</label>
@@ -145,16 +145,16 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-3">
-                                <label for="" class="pull-right">Makanan Driver</label>
+                                <label for="" class="pull-right">Lunch Driver</label>
                             </div>
                             <div class="col-md-9">
                                 <select required name="makanan_driver" class="form-control">
-                                    <option value="none">--Makanan Driver--</option>
+                                    <option value="none">--Lunch Driver--</option>
                                     <option value="1">Include</option>
                                     <option value="0">Tidak</option>
                                 </select>
