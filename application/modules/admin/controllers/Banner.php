@@ -43,12 +43,21 @@ class Banner extends CI_Controller
         }
         $upload_data = ['uploads' => $this->upload->data()];
         $data = [
+          'warna_text'    => $this->input->post('warna_text'),
           'banner'        => $config['upload_path'] . $upload_data['uploads']['file_name']
         ];
         $this->Crud_model->edit('tbl_konfigurasi', 'id_konfigurasi', '1', $data);
         $this->session->set_flashdata('msg', 'Banner diubah');
         redirect('admin/banner');
       }
+    } else {
+
+      $data = [
+        'warna_text'    => $this->input->post('warna_text')
+      ];
+      $this->Crud_model->edit('tbl_konfigurasi', 'id_konfigurasi', '1', $data);
+      $this->session->set_flashdata('msg', 'Banner diubah');
+      redirect('admin/banner');
     }
   }
 }

@@ -21,10 +21,25 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-md-4">
+                  <label for="" class="pull-right">Warna Text</label>
+                </div>
+                <div class="col-md-8">
+                  <select required name="warna_text" class="form-control">
+                    <option value="none">--Warna Text--</option>
+                    <option value="text-dark" <?= $konfigurasi->warna_text == "text-dark" ? "selected" : ""; ?>>Hitam</option>
+                    <option value="text-light" <?= $konfigurasi->warna_text == "text-light" ? "selected" : ""; ?>>Putih</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-4">
                   Banner
                 </div>
                 <div class="col-md-8">
-                  <input type="file" class="form-control" name="banner" required><br>
+                  <input type="file" class="form-control" name="banner"><br>
                   <img src="<?= base_url($konfigurasi->banner); ?>" width="300px" alt="">
                 </div>
               </div>

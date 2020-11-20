@@ -21,7 +21,7 @@
               <div class="row align-items-center">
                 <div class="col-md-7 col-12 order-md-4 order-2">
                   <h4 class="text-danger"><?= $row->merk_mobil; ?></h4>
-                  <p class="text-light"><?= character_limiter($row->deskripsi, '100'); ?></p> <br>
+                  <p class="<?= $konfigurasi->warna_text; ?>"><?= character_limiter($row->deskripsi, '100'); ?></p> <br>
                   <a target="_blank" href="https://api.whatsapp.com/send?phone=<?= $konfigurasi->kontak_person ?>&text=<?= str_replace(' ', '%20', $konfigurasi->pesan_wa) ?>">Pesan Sekarang</a>
                 </div>
                 <div class="col-md-5 col-12 order-md-2 order-1">
