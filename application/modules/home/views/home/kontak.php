@@ -5,7 +5,7 @@
         <h2>Kontak Kami</h2>
       </center>
     </div>
-    <img src="<?= base_url('assets/img/logo.png'); ?>" width="300px" alt="">
+    <img src="<?= base_url($konfigurasi->logo) ?>" width="300px" alt="">
     <hr>
     <div class="row">
 

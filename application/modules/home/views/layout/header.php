@@ -3,7 +3,7 @@
  <nav class="navbar navbar-expand-lg bg-white fixed-top" id="mainNav" style="padding-top: 30px; padding-bottom: 30px;">
    <div class="container">
      <a class="navbar-brand js-scroll-trigger text-dark" href="#page-top">
-       <img src="<?= base_url('assets/img/logo.png'); ?>" width="150px" alt="">
+       <img src="<?= base_url($konfigurasi->logo); ?>" width="150px" alt="">
      </a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>

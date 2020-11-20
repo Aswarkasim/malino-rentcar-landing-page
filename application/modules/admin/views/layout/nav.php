@@ -59,6 +59,16 @@ $role = $this->session->userdata('role');
 
     </li>
 
+    <li class="nav-item <?php if ($this->uri->segment(2) == "logo") {
+                            echo "active";
+                        }
+                        ?>">
+        <a class="nav-link" href="<?php echo base_url('admin/logo') ?>">
+            <i class="fas fa-fw fa-circle"></i>
+            <span>Logo</span></a>
+
+    </li>
+
     <!-- Nav Item - Tables -->
     <li class="nav-item <?php if ($this->uri->segment(2) == "user") {
                             echo "active";
